@@ -2,6 +2,8 @@ import { useLogin } from "@pankod/refine-core";
 import { Box, Container } from "@pankod/refine-mui";
 import { useEffect, useRef } from "react";
 
+import { yariga } from "../assets";
+
 import { CredentialResponse } from "../interfaces/google";
 
 export const Login: React.FC = () => {
@@ -18,7 +20,7 @@ export const Login: React.FC = () => {
       try {
         window.google.accounts.id.initialize({
           ux_mode: "popup",
-          client_id: "your-client-id",
+          client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
           callback: async (res: CredentialResponse) => {
             if (res.credential) {
               login(res);
