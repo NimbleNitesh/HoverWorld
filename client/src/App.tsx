@@ -135,7 +135,7 @@ function App() {
           catchAll={<ErrorComponent />}
           resources={[
             {
-              name: "drones",
+              name: "Items",            // CRUD Functionality
               list: AllProperties,
               show: PropertyDetails,
               create: CreateProperty,
@@ -149,12 +149,12 @@ function App() {
               icon: <PeopleAltOutlined />
             },
             {
-              name: "review",
+              name: "reviews",
               list: Home,
               icon: <StarOutlineRounded />
             },
             {
-              name: "message",
+              name: "messages",
               list: Home,
               icon: <ChatBubbleOutline />
             },
