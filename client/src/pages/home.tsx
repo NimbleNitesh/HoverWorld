@@ -13,20 +13,20 @@ const Home = () => {
   return (
     <Box>
       <Typography fontSize={30} fontWeight={700} color="#e6f1ff">
-        Dashboard
+        About Us
       </Typography>
 
       <Box mt="1.25rem" display="flex" flexWrap="wrap" gap={4}>
         <PieChart
-         title="Drones for Sale" 
-         value={30}
-         series={[54,46]}
+         title="Sold Items" 
+         value={305}
+         series={[305,231]}
          colors={['#475be8','#e4e8ef']}
          />
          <PieChart
-         title="Drones for Rent" 
-         value={57}
-         series={[75,25]}
+         title="Items for Rent" 
+         value={154}
+         series={[244,382]}
          colors={['#475be8','#e4e8ef']}
          />
         <PieChart
@@ -36,9 +36,9 @@ const Home = () => {
          colors={['#475be8','#e4e8ef']}
          />
         <PieChart
-         title="Available in Cities" 
-         value={17}
-         series={[10,90]}
+         title="Total Items" 
+         value={536}
+         series={[536,0]}
          colors={['#475be8','#e4e8ef']}
          />
       </Box>

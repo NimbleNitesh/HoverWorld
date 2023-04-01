@@ -14,7 +14,9 @@ const CreateProperty = () => {
   const onFinishHandler=() => {}
   return (
     <Form
-    type="Create"
+
+    type="Add"
+
     register={register}
     onFinish={onFinish}
     formLoading={formLoading}
