@@ -5,8 +5,8 @@ export const propertyReferralsInfo = [
         color: '#6C5DD3',
     },
     {
-        title: 'Laptops',
-        percentage: 6,
+        title: 'Furnitures',
+        percentage: 16,
         color: '#7FBA7A',
     },
     {
@@ -20,7 +20,7 @@ export const propertyReferralsInfo = [
         color: '#FFA2C0',
     },
     {
-        title: 'Others',
+        title: 'Books',
         percentage: 53,
         color: '#F45252',
     },
