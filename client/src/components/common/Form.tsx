@@ -23,8 +23,10 @@ const Form = ({type,
   }:FormProps) => {
   return (
     <Box>
+
       <Typography fontSize={25} fontWeight={700} color="#ffffff">
         {type} your item
+
       </Typography>
        <Box mt={2.5} borderRadius="15px" padding="20px" bgcolor="#fcfcfc">
                 <form
@@ -37,6 +39,7 @@ const Form = ({type,
                     }}
                     onSubmit={handleSubmit(onFinishHandler)}
                     >
+
                       <FormControl>
                         <FormHelperText
                             sx={{
@@ -233,5 +236,6 @@ const Form = ({type,
     </Box>
   );
 };
+
 
 export default Form
