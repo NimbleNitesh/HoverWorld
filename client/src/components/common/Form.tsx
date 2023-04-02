@@ -21,6 +21,9 @@ const Form = ({type,
     onFinishHandler,
     propertyImage,
   }:FormProps) => {
+
+
+    
   return (
     <Box>
 
@@ -218,7 +221,7 @@ const Form = ({type,
                         </Stack>
                         <Typography
                             fontSize={14}
-                            color="#808191"
+                            color="#e6f1ff"
                             sx={{ wordBreak: "break-all" }}
                         >
                             {propertyImage?.name}
