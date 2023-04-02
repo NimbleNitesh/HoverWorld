@@ -28,14 +28,14 @@ const Form = ({type,
         {type} your item
 
       </Typography>
-       <Box mt={0.5} borderRadius="15px" padding="20px" bgcolor="#112240">
+       <Box mt={2.5} borderRadius="15px" padding="20px" bgcolor="#fcfcfc">
                 <form
                     style={{
-                        marginTop: "0px",
+                        marginTop: "20px",
                         width: "100%",
                         display: "flex",
                         flexDirection: "column",
-                        gap: "10px",
+                        gap: "20px",
                     }}
                     onSubmit={handleSubmit(onFinishHandler)}
                     >
@@ -46,13 +46,12 @@ const Form = ({type,
                                 fontWeight: 500,
                                 margin: "10px 0",
                                 fontSize: 16,
-                                color: "#a8b2d1",
-                                
+                                color: "#11142d",
                             }}
                         >
                             Item name
                         </FormHelperText>
-                        <TextField inputProps={{ style: { color: "white" } }}
+                        <TextField
                             fullWidth
                             required
                             id="outlined-basic"
@@ -67,12 +66,12 @@ const Form = ({type,
                                 fontWeight: 500,
                                 margin: "10px 0",
                                 fontSize: 16,
-                                color: "#a8b2d1",
+                                color: "#11142d",
                             }}
                         >
                             Describe your item
                         </FormHelperText>
-                        <TextareaAutosize 
+                        <TextareaAutosize
                             minRows={5}
                             required
                             placeholder="Write description"
@@ -81,10 +80,10 @@ const Form = ({type,
                                 width: "100%",
                                 background: "transparent",
                                 fontSize: "16px",
-                                borderColor: "#a8b2d1",
+                                borderColor: "rgba(0,0,0,0.23)",
                                 borderRadius: 6,
                                 padding: 10,
-                                color: "#FFFFFF",
+                                color: "#919191",
                             }}
                             {...register("description", { required: true })}
                         />
@@ -97,17 +96,17 @@ const Form = ({type,
                                     fontWeight: 500,
                                     margin: "10px 0",
                                     fontSize: 16,
-                                    color: "#a8b2d1",
+                                    color: "#11142d",
                                 }}
                             >
                                 Item Type
                             </FormHelperText>
-                            <Select 
+                            <Select
                                 variant="outlined"
                                 color="info"
                                 displayEmpty
                                 required
-                                inputProps={{ style: { borderColor: "#a8b2d1", color: "white" }, "aria-label": "Without label" }}
+                                inputProps={{ "aria-label": "Without label" }}
                                 defaultValue="Electronics"
                                 {...register("propertyType", {
                                     required: true,
@@ -127,7 +126,7 @@ const Form = ({type,
                                     fontWeight: 500,
                                     margin: "10px 0",
                                     fontSize: 16,
-                                    color: "#a8b2d1",
+                                    color: "#11142d",
                                 }}
                             >
                                Item price (in ₹)
@@ -150,7 +149,7 @@ const Form = ({type,
                                 fontWeight: 500,
                                 margin: "10px 0",
                                 fontSize: 16,
-                                color: "#a8b2d1",
+                                color: "#11142d",
                             }}
                         >
                             Is your item refundable?
@@ -187,7 +186,7 @@ const Form = ({type,
                     >
                         <Stack direction="row" gap={2}>
                             <Typography
-                                color="#a8b2d1"
+                                color="#11142d"
                                 fontSize={16}
                                 fontWeight={500}
                                 my="10px"
@@ -239,4 +238,4 @@ const Form = ({type,
 };
 
 
-export default Form;
+export default Form
