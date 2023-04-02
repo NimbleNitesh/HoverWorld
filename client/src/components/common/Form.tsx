@@ -28,14 +28,14 @@ const Form = ({type,
         {type} your item
 
       </Typography>
-       <Box mt={2.5} borderRadius="15px" padding="20px" bgcolor="#112240">
+       <Box mt={0.5} borderRadius="15px" padding="20px" bgcolor="#112240">
                 <form
                     style={{
-                        marginTop: "20px",
+                        marginTop: "0px",
                         width: "100%",
                         display: "flex",
                         flexDirection: "column",
-                        gap: "20px",
+                        gap: "10px",
                     }}
                     onSubmit={handleSubmit(onFinishHandler)}
                     >
@@ -47,11 +47,12 @@ const Form = ({type,
                                 margin: "10px 0",
                                 fontSize: 16,
                                 color: "#a8b2d1",
+                                
                             }}
                         >
                             Item name
                         </FormHelperText>
-                        <TextField
+                        <TextField inputProps={{ style: { color: "white" } }}
                             fullWidth
                             required
                             id="outlined-basic"
@@ -71,7 +72,7 @@ const Form = ({type,
                         >
                             Describe your item
                         </FormHelperText>
-                        <TextareaAutosize
+                        <TextareaAutosize 
                             minRows={5}
                             required
                             placeholder="Write description"
@@ -80,10 +81,10 @@ const Form = ({type,
                                 width: "100%",
                                 background: "transparent",
                                 fontSize: "16px",
-                               
+                                borderColor: "#a8b2d1",
                                 borderRadius: 6,
                                 padding: 10,
-                                color: "#919191",
+                                color: "#FFFFFF",
                             }}
                             {...register("description", { required: true })}
                         />
@@ -101,12 +102,12 @@ const Form = ({type,
                             >
                                 Item Type
                             </FormHelperText>
-                            <Select
+                            <Select 
                                 variant="outlined"
                                 color="info"
                                 displayEmpty
                                 required
-                                inputProps={{ "aria-label": "Without label" }}
+                                inputProps={{ style: { borderColor: "#a8b2d1", color: "white" }, "aria-label": "Without label" }}
                                 defaultValue="Electronics"
                                 {...register("propertyType", {
                                     required: true,
