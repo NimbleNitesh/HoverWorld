@@ -28,7 +28,7 @@ const Form = ({type,
         {type} your item
 
       </Typography>
-       <Box mt={2.5} borderRadius="15px" padding="20px" bgcolor="#fcfcfc">
+       <Box mt={2.5} borderRadius="15px" padding="20px" bgcolor="#112240">
                 <form
                     style={{
                         marginTop: "20px",
@@ -46,7 +46,7 @@ const Form = ({type,
                                 fontWeight: 500,
                                 margin: "10px 0",
                                 fontSize: 16,
-                                color: "#11142d",
+                                color: "#a8b2d1",
                             }}
                         >
                             Item name
@@ -66,7 +66,7 @@ const Form = ({type,
                                 fontWeight: 500,
                                 margin: "10px 0",
                                 fontSize: 16,
-                                color: "#11142d",
+                                color: "#a8b2d1",
                             }}
                         >
                             Describe your item
@@ -80,7 +80,7 @@ const Form = ({type,
                                 width: "100%",
                                 background: "transparent",
                                 fontSize: "16px",
-                                borderColor: "rgba(0,0,0,0.23)",
+                               
                                 borderRadius: 6,
                                 padding: 10,
                                 color: "#919191",
@@ -96,7 +96,7 @@ const Form = ({type,
                                     fontWeight: 500,
                                     margin: "10px 0",
                                     fontSize: 16,
-                                    color: "#11142d",
+                                    color: "#a8b2d1",
                                 }}
                             >
                                 Item Type
@@ -126,7 +126,7 @@ const Form = ({type,
                                     fontWeight: 500,
                                     margin: "10px 0",
                                     fontSize: 16,
-                                    color: "#11142d",
+                                    color: "#a8b2d1",
                                 }}
                             >
                                Item price (in ₹)
@@ -149,7 +149,7 @@ const Form = ({type,
                                 fontWeight: 500,
                                 margin: "10px 0",
                                 fontSize: 16,
-                                color: "#11142d",
+                                color: "#a8b2d1",
                             }}
                         >
                             Is your item refundable?
@@ -186,7 +186,7 @@ const Form = ({type,
                     >
                         <Stack direction="row" gap={2}>
                             <Typography
-                                color="#11142d"
+                                color="#a8b2d1"
                                 fontSize={16}
                                 fontWeight={500}
                                 my="10px"
@@ -238,4 +238,4 @@ const Form = ({type,
 };
 
 
-export default Form
+export default Form;
