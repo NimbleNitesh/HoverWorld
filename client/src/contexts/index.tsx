@@ -1,10 +1,11 @@
-import { DarkTheme, LightTheme, ThemeProvider } from "@pankod/refine-mui";
 import React, {
   PropsWithChildren,
   createContext,
   useEffect,
   useState,
 } from "react";
+import { ThemeProvider } from "@pankod/refine-mui";
+import { DarkTheme, LightTheme } from "@pankod/refine-mui";
 
 type ColorModeContextType = {
   mode: string;

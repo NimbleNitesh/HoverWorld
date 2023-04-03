@@ -1,11 +1,8 @@
-import express from 'express';
+import express from "express";
+// IMPORT ALL CONTROLLERS...
+import { createUser, getAllUsers, getUserInfoByID } from "../controllers/user.controller.js";
 
-//IMPORT ALL THE CONTROLLERS
-import {
-    createUser, getAllUsers, getUserInfoByID
-} from '../controllers/user.controller.js';
-
-const router =express.Router();
+const router = express.Router();
 
 router.route('/').get(getAllUsers);
 router.route('/').post(createUser);

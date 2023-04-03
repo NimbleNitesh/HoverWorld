@@ -53,11 +53,9 @@ const PropertyReferrals = () => {
             borderRadius="15px">
 
             <Typography fontSize={18} fontWeight={600} color="#11142d">
-                Your Usual Items 
+                Property Referrals
             </Typography>
-            <Typography fontSize={12} color="#808191">
-                The items you usually buy or sell :D
-            </Typography>
+
             <Stack my="20px" direction="column" gap={4}>
                 {propertyReferralsInfo.map((bar) =>
                     <ProgressBar key={bar.title} {...bar} />)}
