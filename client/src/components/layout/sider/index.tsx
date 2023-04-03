@@ -1,38 +1,38 @@
-import React, { useState } from "react";
 import {
-  Box,
-  Drawer,
-  Sider as DefaultSider,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-  Collapse,
-  Tooltip,
-  Button,
-  IconButton,
-  MuiList,
-} from "@pankod/refine-mui";
-import {
-  ListOutlined,
-  Logout,
-  ExpandLess,
-  ExpandMore,
   ChevronLeft,
   ChevronRight,
-  MenuRounded,
   Dashboard,
+  ExpandLess,
+  ExpandMore,
+  ListOutlined,
+  Logout,
+  MenuRounded,
 } from "@mui/icons-material";
 import {
   CanAccess,
   ITreeMenu,
   useIsExistAuthentication,
   useLogout,
-  useTitle,
-  useTranslate,
-  useRouterContext,
   useMenu,
   useRefineContext,
+  useRouterContext,
+  useTitle,
+  useTranslate,
 } from "@pankod/refine-core";
+import {
+  Box,
+  Button,
+  Collapse,
+  Sider as DefaultSider,
+  Drawer,
+  IconButton,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  MuiList,
+  Tooltip,
+} from "@pankod/refine-mui";
+import React, { useState } from "react";
 
 import { Title as DefaultTitle } from "../title";
 
@@ -134,7 +134,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                     primary={label}
                     primaryTypographyProps={{
                       noWrap: true,
-                      fontSize: "16px",
+                      fontSize: "5rem",
                       fontWeight: isSelected ? "bold" : "normal",
                     }}
                   />
@@ -178,16 +178,16 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                 py: isNested ? 1.25 : 1,
                 "&.Mui-selected": {
                   "&:hover": {
-                    backgroundColor:
-                      isSelected ? '#1e36e8' : "transparent",
+                    color: isSelected?"#64ffda":"#e6f1ff",
+                    backgroundColor: isSelected?"#233554":"transparent",
                   },
-                  backgroundColor:
-                    isSelected ? '#475be8' : "transparent",
+                  color: isSelected?"#64ffda":"#e6f1ff",
+                  backgroundColor: isSelected?"#233554":"transparent",
                 },
                 justifyContent: "center",
-                margin: "10px auto",
-                borderRadius: "12px",
-                minHeight: '56px',
+                margin: '0.625rem auto',
+                borderRadius: '0.75rem',
+                minHeight: '3.5rem',
                 width: '90%'
               }}
             >
@@ -195,8 +195,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                 sx={{
                   justifyContent: "center",
                   minWidth: 36,
-                  color: isSelected ? "#fff"
-                    : "#808191",
+                  color: isSelected?"#64ffda":"#e6f1ff",
                 }}
               >
                 {icon ?? <ListOutlined />}
@@ -205,11 +204,9 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                 primary={label}
                 primaryTypographyProps={{
                   noWrap: true,
-                  fontSize: "16px",
+                  fontSize: "1rem",
                   fontWeight: isSelected ? "bold" : "normal",
-                  color: isSelected ? "#fff"
-                    : "#808191",
-                  marginLeft: "10px"
+                  marginLeft: '0.625rem',
                 }}
               />
             </ListItemButton>
@@ -250,18 +247,18 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             sx={{
               justifyContent: "center",
               minWidth: 36,
-              color: "#808191",
-              marginLeft: "6px",
-              marginRight: "14px",
+              color: "#e6f1ff",
+              marginLeft: "0.375rem",
+              marginRight: "0.875rem",
             }}
           >
             <Dashboard />
           </ListItemIcon>
           <ListItemText
-            primary={translate("dashboard.title", "Dashboard")}
+            primary={translate("dashboard.title", "About Us")}
             primaryTypographyProps={{
               noWrap: true,
-              fontSize: "16px",
+              fontSize: "1rem",
               fontWeight: selectedKey === "/" ? "bold" : "normal",
             }}
           />
@@ -280,19 +277,19 @@ export const Sider: typeof DefaultSider = ({ render }) => {
       <ListItemButton
         key="logout"
         onClick={() => mutateLogout()}
-        sx={{
+        sx={{ 
           justifyContent: "center",
-          margin: "10px auto",
-          borderRadius: "12px",
-          minHeight: '56px',
-          width: '90%'
-        }}
+          margin: '0.625rem auto',
+          borderRadius: '0.75rem',
+          minHeight: '3.5rem',
+          width: '90%',
+      }}
       >
         <ListItemIcon
           sx={{
             justifyContent: "center",
             minWidth: 36,
-            color: "#808191",
+            color: "primary.contrastText",
           }}
         >
           <Logout />
@@ -301,11 +298,12 @@ export const Sider: typeof DefaultSider = ({ render }) => {
           primary={t("buttons.logout", "Logout")}
           primaryTypographyProps={{
             noWrap: true,
-            fontSize: "16px",
+            fontSize: "1rem",
+            marginLeft: '0.625rem',
           }}
         />
       </ListItemButton>
-    </Tooltip >
+    </Tooltip>
   );
 
   const items = renderTreeView(menuItems, selectedKey);
@@ -329,7 +327,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
   };
 
   const drawer = (
-    <MuiList disablePadding sx={{ mt: 1, color: "#808191" }}>
+    <MuiList disablePadding sx={{ mt: 1, color: "primary.contrastText" }}>
       {renderSider()}
     </MuiList>
   );
@@ -366,7 +364,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             display: { sm: "block", md: "none" },
             "& .MuiDrawer-paper": {
               width: 256,
-              bgcolor: "#FCFCFC",
+              bgcolor: "#0a192f",
             },
           }}
         >
@@ -389,7 +387,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             display: { xs: "none", md: "block" },
             "& .MuiDrawer-paper": {
               width: drawerWidth,
-              bgcolor: "#FCFCFC", // sidebg
+              bgcolor: "#0a192f",
               overflow: "hidden",
               transition: "width 200ms cubic-bezier(0.4, 0, 0.6, 1) 0ms",
             },
@@ -417,14 +415,11 @@ export const Sider: typeof DefaultSider = ({ render }) => {
           </Box>
           <Button
             sx={{
-              background: "#475BE8",
+              background: "rgba(0,0,0,.5)",
               color: "primary.contrastText",
               textAlign: "center",
               borderRadius: 0,
               borderTop: "1px solid #ffffff1a",
-              '&:hover': {
-                background: "#1e36e8"
-              }
             }}
             fullWidth
             size="large"
@@ -440,7 +435,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             top: "64px",
             left: "0px",
             borderRadius: "0 6px 6px 0",
-            bgcolor: "#475b38",
+            bgcolor: "secondary.main",
             zIndex: 1199,
             width: "36px",
           }}
