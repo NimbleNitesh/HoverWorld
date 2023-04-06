@@ -62,10 +62,10 @@ const PropertyDetails = () => {
         <Box
             borderRadius="15px"
             padding="20px"
-            bgcolor="#FCFCFC"
+            bgcolor="#233554"
             width="fit-content"
         >
-            <Typography fontSize={25} fontWeight={700} color="#11142D">
+            <Typography fontSize={25} fontWeight={700} color="#ccd6f6">
                 Details
             </Typography>
 
@@ -94,7 +94,7 @@ const PropertyDetails = () => {
                             <Typography
                                 fontSize={18}
                                 fontWeight={500}
-                                color="#11142D"
+                                color="#8892b0"
                                 textTransform="capitalize"
                             >
                                 {propertyDetails.propertyType}
@@ -121,7 +121,7 @@ const PropertyDetails = () => {
                                     fontSize={22}
                                     fontWeight={600}
                                     mt="10px"
-                                    color="#11142D"
+                                    color="#ccd6f6"
                                 >
                                     {propertyDetails.title}
                                 </Typography>
@@ -131,8 +131,8 @@ const PropertyDetails = () => {
                                     alignItems="center"
                                     gap={0.5}
                                 >
-                                    <Place sx={{ color: "#808191" }} />
-                                    <Typography fontSize={14} color="#808191">
+                                    <Place sx={{ color: "#8892b0" }} />
+                                    <Typography fontSize={14} color="#8892b0">
                                         {propertyDetails.location}
                                     </Typography>
                                 </Stack>
@@ -143,7 +143,7 @@ const PropertyDetails = () => {
                                     fontSize={16}
                                     fontWeight={600}
                                     mt="10px"
-                                    color="#11142D"
+                                    color="#8892b0"
                                 >
                                     Price
                                 </Typography>
@@ -161,7 +161,7 @@ const PropertyDetails = () => {
                                     </Typography>
                                     <Typography
                                         fontSize={14}
-                                        color="#808191"
+                                        color="#8892b0"
                                         mb={0.5}
                                     >
                                         for one day
@@ -171,10 +171,10 @@ const PropertyDetails = () => {
                         </Stack>
 
                         <Stack mt="25px" direction="column" gap="10px">
-                            <Typography fontSize={18} color="#11142D">
+                            <Typography fontSize={18} color="#8892b0">
                                 Description
                             </Typography>
-                            <Typography fontSize={14} color="#808191">
+                            <Typography fontSize={14} color="#8892b0">
                                 {propertyDetails.description}
                             </Typography>
                         </Stack>
@@ -223,7 +223,7 @@ const PropertyDetails = () => {
                                 <Typography
                                     fontSize={18}
                                     fontWeight={600}
-                                    color="#11142D"
+                                    color="#e6f1ff"
                                 >
                                     {propertyDetails.creator.name}
                                 </Typography>
@@ -231,7 +231,7 @@ const PropertyDetails = () => {
                                     mt="5px"
                                     fontSize={14}
                                     fontWeight={400}
-                                    color="#808191"
+                                    color="#8892b0"
                                 >
                                     Agent
                                 </Typography>
@@ -249,7 +249,7 @@ const PropertyDetails = () => {
                                     fontWeight={400}
                                     color="#808191"
                                 >
-                                    North Carolina, USA
+                                    Kanpur, India
                                 </Typography>
                             </Stack>
 
@@ -257,7 +257,7 @@ const PropertyDetails = () => {
                                 mt={1}
                                 fontSize={16}
                                 fontWeight={600}
-                                color="#11142D"
+                                color="#8892b0"
                             >
                                 {propertyDetails.creator.allProperties.length}{" "}
                                 Properties
@@ -305,6 +305,7 @@ const PropertyDetails = () => {
                     <Stack>
                         <img
                             src="https://serpmedia.org/scigen/images/googlemaps-nyc-standard.png?crc=3787557525"
+                            alt="couldn't load"
                             width="100%"
                             height={306}
                             style={{ borderRadius: 10, objectFit: "cover" }}

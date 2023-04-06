@@ -10,14 +10,14 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
 
             <Typography fontSize={25}
                 fontWeight={700}
-                color="#11142d"
+                color=" #ccd6f6"
             >
 
                 {type} a Property
             </Typography>
 
             <Box mt={2.5} borderRadius="15px"
-                padding="20px" bgcolor="#fcfcfc">
+                padding="20px" bgcolor=" #233554">
 
                 <form style={{ marginTop: "20px", width: "100%", display: "flex", flexDirection: "column", gap: "20px" }}
                     onSubmit={handleSubmit(onFinishHandler)}
@@ -25,7 +25,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
 
                     <FormControl>
                         <FormHelperText sx={{
-                            fontWeight: 500, margin: "10px", fontSize: 16, color: "#11142d"
+                            fontWeight: 500, margin: "10px", fontSize: 16, color: "#a8b2d1"
                         }}>Enter Property Name
                         </FormHelperText>
                         <TextField
@@ -33,6 +33,9 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
                             required
                             id="outlined-basic"
                             color="info"
+                            style={{
+                                borderColor: '#64ffda'
+                            }}
                             variant="outlined"
                             {...register("title", {
                                 required: true
@@ -45,7 +48,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
 
                     <FormControl>
                         <FormHelperText sx={{
-                            fontWeight: 500, margin: "10px", fontSize: 16, color: "#11142d"
+                            fontWeight: 500, margin: "10px", fontSize: 16, color: "#a8b2d1"
                         }}>Enter Description
                         </FormHelperText>
                         <TextareaAutosize
@@ -57,7 +60,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
                                 width: "100%",
                                 background: "transparent",
                                 fontSize: "16px",
-                                borderColor: 'rgba(0,0,0,0.23)',
+                                borderColor: '#8892b0',
                                 borderRadius: 6,
                                 padding: 10,
                                 color: "#919191"
@@ -75,7 +78,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
                                 fontWeight: 500,
                                 margin: "10px 0",
                                 fontSize: 16,
-                                color: "#11142d"
+                                color: "#a8b2d1"
                             }}>
 
                                 Select Property Type
@@ -109,7 +112,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
 
                         <FormControl>
                             <FormHelperText sx={{
-                                fontWeight: 500, margin: "10px", fontSize: 16, color: "#11142d"
+                                fontWeight: 500, margin: "10px", fontSize: 16, color: "#a8b2d1"
                             }}>Enter Property Price
                             </FormHelperText>
                             <TextField
@@ -132,7 +135,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
 
                     <FormControl>
                         <FormHelperText sx={{
-                            fontWeight: 500, margin: "10px", fontSize: 16, color: "#11142d"
+                            fontWeight: 500, margin: "10px", fontSize: 16, color: "#a8b2d1"
                         }}>Enter Location
                         </FormHelperText>
                         <TextField
@@ -156,7 +159,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
                     >
 
                         <Stack direction="row" gap={2}>
-                            <Typography color="#11142d"
+                            <Typography color="#a8b2d1"
                                 fontSize={16}
                                 fontWeight={500}
                                 my={"10px"}

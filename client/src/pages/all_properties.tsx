@@ -50,7 +50,7 @@ const AllProperties = () => {
                 >
                     <Typography fontSize={25}
                         fontWeight={700}
-                        color="#11142d">
+                        color="#ccd6f6">
 
                         {!allProperties.length ? 'There are no properties' : 'All Properties'}
                     </Typography>
@@ -120,7 +120,7 @@ const AllProperties = () => {
                 alignItems="center" >
                 <Typography fontSize={25}
                     fontWeight={700}
-                    color="#11142d">
+                    color="#ccd6f6">
 
                     List Property
                 </Typography>
@@ -154,9 +154,10 @@ const AllProperties = () => {
                 <Box display="flex" gap={2} mt={3} flexWrap="wrap">
                     <CustomButton
                         title="Previous"
-                        handleClick={() => setCurrent((prev) => prev - 1)}
                         backgroundColor="#475be8"
                         color="#fcfcfc"
+                        handleClick={() => setCurrent((prev) => prev - 1)}
+                        
                         disabled={!(current > 1)}
 
                     />

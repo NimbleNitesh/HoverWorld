@@ -16,11 +16,11 @@ const ProgressBar = ({ title, percentage, color }: ProgressBarProps) => (
             justifyContent="space-between">
             <Typography fontSize={16}
                 fontWeight={500}
-                color="#11142d">{title}
+                color="#8892b0">{title}
             </Typography>
             <Typography fontSize={16}
                 fontWeight={500}
-                color="#11142d">{percentage}
+                color="#8892b0">{percentage}
             </Typography>
 
         </Stack>
@@ -45,14 +45,14 @@ const PropertyReferrals = () => {
     return (
         <Box
             p={4}
-            bgcolor={"#fcfcfc"}
+            bgcolor={"#233554"}
             id="chart"
             minWidth={490}
             display="flex"
             flexDirection="column"
             borderRadius="15px">
 
-            <Typography fontSize={18} fontWeight={600} color="#11142d">
+            <Typography fontSize={18} fontWeight={600} color="#a8b2d1">
                 Property Referrals
             </Typography>
 

@@ -19,7 +19,7 @@ const InfoBar = ({ icon, name }: InfoBarProps) => (
         direction="row"
     >
         {icon}
-        <Typography fontSize={14} color="#808191">
+        <Typography fontSize={14} color="#e6f1ff">
             {name}
         </Typography>
     </Stack>
@@ -78,11 +78,11 @@ const AgentCard = ({
                     flexWrap="wrap"
                     alignItems="center"
                 >
-                    <Typography fontSize={22} fontWeight={600} color="#11142d">
+                    <Typography fontSize={22} fontWeight={600} color="#a8b2d1">
                         {name}
                     </Typography>
                     <Typography fontSize={14} color="#808191">
-                        Real-Estate Agent
+                    Listor
                     </Typography>
                 </Stack>
                 <Stack

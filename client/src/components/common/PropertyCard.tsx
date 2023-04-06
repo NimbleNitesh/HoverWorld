@@ -26,7 +26,7 @@ const PropertyCard = ({ id, title, location, price, photo }: PropertyCardProps) 
                 image={photo}
                 alt="Card Image"
 
-                sx={{ borderRadius: "10px" }}
+                sx={{ borderRadius: "10px"}}
             />
             <CardContent sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', gap: '10px', paddingX: '5px' }}>
                 <Stack direction="column" gap={1}>
