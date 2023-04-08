@@ -18,7 +18,7 @@ This is a MERN stack web development with CRUD application using refine framewor
 ## Setup
 To set up the project, follow these steps:
 1. Clone the repository: ```git clone https://github.com/NimbleNitesh/HoverWorld.git```
-2. Navigate to the project directory: ```cd odyssey```
+2. Navigate to the project directory: ```cd HoverWorld```
 3. Install dependencies: ```npm install```
 4. Create a ```.env``` file in client folder:
 ```
