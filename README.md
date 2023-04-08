@@ -35,10 +35,11 @@ CLOUDINARY_API_SECRET = <Your CLOUDINARY_API_SECRET>
 7. Start the client ```npm run dev```
 8. Open the website in your browser at ```http:localhost:3000```
 
-##Contributions
+## Contributions
 Contributions are welcome! If you find a bug or have an idea for a new feature, please open an issue or submit a pull request.
 
-##Some Preview
+## Some Preview
+
 ![image](https://user-images.githubusercontent.com/76262941/230743679-e989599f-1343-44b2-8028-d6c98d286c44.png)
 ![image](https://user-images.githubusercontent.com/76262941/230743695-7881bed0-7da2-4e09-9460-d90a72c52adb.png)
 ![image](https://user-images.githubusercontent.com/76262941/230743739-4e427eaa-ef78-4a8a-b014-354d5602e93f.png)
