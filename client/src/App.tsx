@@ -16,7 +16,8 @@ import {
   PeopleAltOutlined,
   StarOutlineRounded,
   StartOutlined,
-  VillaOutlined
+  VillaOutlined,
+  AirlinesOutlined
 } from "@mui/icons-material"
 
 import dataProvider from "@pankod/refine-simple-rest";
@@ -142,7 +143,7 @@ function App() {
               show: PropertyDetails,
               create: CreateProperty,
               edit: EditProperty,
-              icon: <VillaOutlined />,
+              icon: <AirlinesOutlined />,
 
             },
             {

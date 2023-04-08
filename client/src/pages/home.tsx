@@ -32,26 +32,26 @@ const Home = () => {
       <Box mt="20px" display="flex" flexWrap="wrap" gap={4}>
         <PieChart
           title="Drones for Sale"
-          value={684}
-          series={[75, 25]}
-          colors={['#475BE8', '#CFC8FF']}
-        />
-        <PieChart
-          title="Drones for Rent"
-          value={550}
+          value={9}
           series={[60, 40]}
           colors={['#475BE8', '#CFC8FF']}
         />
         <PieChart
+          title="Drones for Rent"
+          value={10}
+          series={[80, 20]}
+          colors={['#475BE8', '#CFC8FF']}
+        />
+        <PieChart
           title="Total customers"
-          value={5684}
+          value={47}
           series={[75, 25]}
           colors={['#475BE8', '#CFC8FF']}
         />
         <PieChart
           title="Available in Cities"
-          value={555}
-          series={[75, 25]}
+          value={7}
+          series={[20, 80]}
           colors={['#475BE8', '#CFC8FF']}
         />
       </Box>

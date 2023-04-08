@@ -41,7 +41,7 @@ const PropertyCard = ({ id, title, location, price, photo }: PropertyCardProps) 
                 </Stack>
                 <Box px={1.5} py={0.5} borderRadius={1}
                     bgcolor="#dadefa" height="fit-content">
-                    <Typography fontSize={12} fontWeight={600} color="#475be8">${price}</Typography>
+                    <Typography fontSize={12} fontWeight={600} color="#475be8">₹{price}</Typography>
                 </Box>
             </CardContent>
         </Card>
