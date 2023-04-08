@@ -41,8 +41,13 @@ Contributions are welcome! If you find a bug or have an idea for a new feature, 
 ## Some Preview
 
 ![image](https://user-images.githubusercontent.com/76262941/230743679-e989599f-1343-44b2-8028-d6c98d286c44.png)
+
 ![image](https://user-images.githubusercontent.com/76262941/230743695-7881bed0-7da2-4e09-9460-d90a72c52adb.png)
+
 ![image](https://user-images.githubusercontent.com/76262941/230743739-4e427eaa-ef78-4a8a-b014-354d5602e93f.png)
+
 ![image](https://user-images.githubusercontent.com/76262941/230743707-bc2f5f1b-1ac0-4213-b203-00f06cf45795.png)
+
 ![image](https://user-images.githubusercontent.com/76262941/230743721-37634a91-ed39-4860-a38a-926fefd8caa8.png)
+
 ![image](https://user-images.githubusercontent.com/76262941/230743729-4d09b7e7-aabd-47e1-9da7-c1984070e6ab.png)
