@@ -2,12 +2,12 @@ import { ApexOptions } from 'apexcharts';
 
 export const TotalRevenueSeries = [
     {
-        name: 'Sell Revenue',
-        data: [175, 114, 113, 95, 143, 143, 96],
+        name: 'Last Month',
+        data: [183, 124, 115, 85, 143, 143, 96],
     },
     {
-        name: 'Rent Revenue',
-        data: [85, 84, 52, 44, 108, 98, 47],
+        name: 'Running Month',
+        data: [95, 84, 72, 44, 108, 108, 47],
     },
 ];
 
@@ -18,7 +18,7 @@ export const TotalRevenueOptions: ApexOptions = {
             show: false,
         },
     },
-    colors: ['#2a9918', '#0fd183'],
+    colors: ['#475BE8', '#CFC8FF'],
     plotOptions: {
         bar: {
             borderRadius: 4,
@@ -38,11 +38,24 @@ export const TotalRevenueOptions: ApexOptions = {
     },
     xaxis: {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+        labels: {
+            style: {
+              colors: '#FFFFFF' // set x-axis label color
+            }
+          },
     },
     yaxis: {
         title: {
             text: '₹ (thousands)',
+            style: {
+                color: '#FFFFFF' // set x-axis label color
+              }
         },
+        labels: {
+            style: {
+              colors: '#FFFFFF' // set x-axis label color
+            }
+          },
     },
     fill: {
         opacity: 1,
@@ -50,6 +63,9 @@ export const TotalRevenueOptions: ApexOptions = {
     legend: {
         position: 'top',
         horizontalAlign: 'right',
+        labels: {
+            colors: '#FFFFFF'
+          }
     },
     tooltip: {
         y: {

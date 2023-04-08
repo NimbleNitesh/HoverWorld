@@ -9,18 +9,18 @@ import PropertyReferrals from './charts/PropertyReferrals';
 import TotalRevenue from './charts/TotalRevenue';
 
 // agent
-import AgentCard from './agent/AgentCard';
+import AgentCard from './agent/agent';
 
 // home
-import TopAgent from './home/TopAgent';
+import TopAgent from './Home/TopAgents';
 
 export {
-  Profile,
-  PropertyCard,
-  CustomButton,
-  PieChart,
-  PropertyReferrals,
-  TotalRevenue,
-  AgentCard,
-  TopAgent,
+    Profile,
+    PropertyCard,
+    CustomButton,
+    PieChart,
+    PropertyReferrals,
+    TotalRevenue,
+    AgentCard,
+    TopAgent,
 };

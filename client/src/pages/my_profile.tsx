@@ -1,17 +1,13 @@
-import { useOne } from "@pankod/refine-core";
-import { useParams } from "@pankod/refine-react-router-v6";
+import { useGetIdentity, useOne } from "@pankod/refine-core";
 
 import { Profile } from "components";
 
-const AgentProfile = () => {
-    const { id } = useParams();
-
+const MyProfile = () => {
+    const { data: user } = useGetIdentity();
     const { data, isLoading, isError } = useOne({
         resource: "users",
-        id: id as string,
+        id: user?.userid,
     });
-
-    console.log(data);
 
     const myProfile = data?.data ?? [];
 
@@ -20,7 +16,7 @@ const AgentProfile = () => {
 
     return (
         <Profile
-            type="Agent"
+            type="My"
             name={myProfile.name}
             email={myProfile.email}
             avatar={myProfile.avatar}
@@ -29,4 +25,4 @@ const AgentProfile = () => {
     );
 };
 
-export default AgentProfile;
+export default MyProfile;

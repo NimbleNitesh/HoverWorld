@@ -1,54 +1,103 @@
-import {useList} from '@pankod/refine-core'
-import { Typography,Box, Stack } from '@pankod/refine-mui'
+import { useList } from "@pankod/refine-core";
+import { Typography, Box, Stack } from "@pankod/refine-mui";
 
-import{
+import {
   PieChart,
   PropertyReferrals,
   TotalRevenue,
   PropertyCard,
-  TopAgent
-} from'components'
+} from "components";
 
 const Home = () => {
+  const { data, isLoading, isError } = useList({
+    resource: "properties",
+    config: {
+      pagination: {
+        pageSize: 4,
+      },
+    },
+  });
+
+  const latestProperties = data?.data ?? [];
+
+  if (isLoading) return <Typography>Loading...</Typography>;
+  if (isError) return <Typography>Something went wrong!</Typography>;
+
   return (
     <Box>
-      <Typography fontSize={30} fontWeight={700} color="#e6f1ff">
-        About Us
+      <Typography fontSize={25} fontWeight={700} color="#a8b2d1">
+        Dashboard
       </Typography>
 
-      <Box mt="1.25rem" display="flex" flexWrap="wrap" gap={4}>
+      <Box mt="20px" display="flex" flexWrap="wrap" gap={4}>
         <PieChart
-         title="Sold Items" 
-         value={305}
-         series={[305,231]}
-         colors={['#475be8','#e4e8ef']}
-         />
-         <PieChart
-         title="Items for Rent" 
-         value={154}
-         series={[244,382]}
-         colors={['#475be8','#e4e8ef']}
-         />
+          title="Drones for Sale"
+          value={9}
+          series={[60, 40]}
+          colors={['#475BE8', '#CFC8FF']}
+        />
         <PieChart
-         title="Total Customers" 
-         value={428}
-         series={[80,20]}
-         colors={['#475be8','#e4e8ef']}
-         />
+          title="Drones for Rent"
+          value={10}
+          series={[80, 20]}
+          colors={['#475BE8', '#CFC8FF']}
+        />
         <PieChart
-         title="Total Items" 
-         value={536}
-         series={[536,0]}
-         colors={['#475be8','#e4e8ef']}
-         />
+          title="Total customers"
+          value={47}
+          series={[75, 25]}
+          colors={['#475BE8', '#CFC8FF']}
+        />
+        <PieChart
+          title="Available in Cities"
+          value={7}
+          series={[20, 80]}
+          colors={['#475BE8', '#CFC8FF']}
+        />
       </Box>
 
-      <Stack mt="1.6rem" width="100%" direction={{xs: 'column', lg: 'row'}} gap={4}>
+      <Stack
+        mt="25px"
+        width="100%"
+        direction={{ xs: "column", lg: "row" }}
+        gap={4}
+      >
         <TotalRevenue />
         <PropertyReferrals />
       </Stack>
-    </Box>
-  )
-}
 
-export default Home
+      <Box
+        flex={1}
+        borderRadius="15px"
+        padding="20px"
+        bgcolor="#233554"
+        display="flex"
+        flexDirection="column"
+        minWidth="100%"
+        mt="25px"
+      >
+        <Typography fontSize="18px" fontWeight={600} color="#8892b0" >
+          Latest Properties
+        </Typography>
+
+        <Box
+          mt={2.5}
+          sx={{ display: "flex", flexWrap: "wrap", gap: 4 }}
+        >
+          {latestProperties.map((property) => (
+            <PropertyCard
+              key={property._id}
+              id={property._id}
+              title={property.title}
+              location={property.location}
+              price={property.price}
+              photo={property.photo}
+            />
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  );
+};
+
+export default Home;
