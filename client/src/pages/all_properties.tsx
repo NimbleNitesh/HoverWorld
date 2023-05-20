@@ -103,7 +103,7 @@ const AllProperties = () => {
                                 <MenuItem value="">
                                     All
                                 </MenuItem>
-                                {['Apartment', 'Villa', 'Farmhouse', 'Condos', 'TownHouse', 'Duplex', 'Studio', 'Chalet'].map((type) => (
+                                {['Drones', 'Sensors', 'Circuits', 'Drone Part', 'Others'].map((type) => (
                                     <MenuItem key={type} value={type.toLowerCase()}>{type}</MenuItem>
                                 ))}
 

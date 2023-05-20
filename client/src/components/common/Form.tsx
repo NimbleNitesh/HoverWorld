@@ -93,19 +93,15 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
                                     'aria-label': 'Without label'
                                 }}
 
-                                defaultValue="apartment"
+                                defaultValue="drones"
                                 {...register('propertyType',
                                     { required: true })}
                             >
-                                <MenuItem value="apartment">Apartment</MenuItem>
-                                <MenuItem value="villa">Villa</MenuItem>
-                                <MenuItem value="farmhouse">Farmhouse</MenuItem>
-                                <MenuItem value="condos">Condos</MenuItem>
-                                <MenuItem value="townhouse">TownHouse</MenuItem>
-                                <MenuItem value="duplex">Duplex</MenuItem>
-                                <MenuItem value="studio">Studio</MenuItem>
-                                <MenuItem value="chalet">Chalet</MenuItem>
-
+                                <MenuItem value="drones">Drones</MenuItem>
+                                <MenuItem value="sensors">Sensors</MenuItem>
+                                <MenuItem value="circuits">Circuits</MenuItem>
+                                <MenuItem value="drone-part">Drone Part</MenuItem>
+                                <MenuItem value="others">Others</MenuItem>
                             </Select>
 
                         </FormControl>
